@@ -7,19 +7,19 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo logo-link" href="#">
+    <a class="page-header__logo" href="#">
       <img src="" width="" height="" alt="Логотип Барбершопа «Бородинского»">
     </a>
 
     <nav class="page-nav">
-      <div class="center-wrap">
-        <button class="page-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <button class="page-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
 
+      <div class="page-nav__wrap">
         <ul class="page-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="#">Главная</a>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Наши работы</a>
@@ -44,18 +44,18 @@
     </nav>
   </header>
 
-  <main class="main">
+  <main class="page-main">
     <h1 class="visually-hidden">Сайт Барбершопа «Бородинского»</h1>
 
     <section class="stats">
-      <div class="center-wrap">
+      <div class="stats__wrap">
         <h2 class="visually-hidden">Наша статистика в цифрах</h2>
 
         <header class="stats__header">
           <h3 class="stats__title">Стрижка у нас это выгодно!</h3>
           <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-          <p class="stats__legend">
-            <small class="stats__legend-text">* — приведённые данные ложь</small>
+          <p class="stats__legend stats__legend--top">
+            <small>* — приведённые данные ложь</small>
           </p>
         </header>
 
@@ -77,14 +77,17 @@
             <dd class="stats__desc">лайков и комплиментов</dd>
           </div>
         </dl>
+        <p class="stats__legend stats__legend--bottom">
+          <small>* — приведённые данные ложь</small>
+        </p>
       </div>
     </section>
 
     <section class="advantages">
-      <div class="center-wrap slider">
+      <div class="advantages__wrap slider">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list slider__list">
-          <li class="advantages__item slider__item advantages__item--fast">
+          <li class="advantages__item advantages__item--fast slider__item">
             <h3 class="advantages__title">Быстро</h3>
             <p class="advantages__desc">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
           </li>
@@ -97,7 +100,7 @@
             <p class="advantages__desc">Наши мастера — профессионалы своего дела не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
           </li>
         </ul>
-        <p class="slider__toggles">
+        <p class="advantages__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
@@ -106,78 +109,85 @@
     </section>
 
     <section class="news">
-      <div class="center-wrap">
+      <div class="news__wrap">
         <h2 class="news__title">Новости и акции</h2>
         <a class="news__button button" href="#">Показать все</a>
         <ul class="news__list">
           <li class="news__item">
-            <time class="news__date" datetime="2024-09-29">
-              <b class="news__day">29</b> сент
-            </time>
-            <p class="news__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2024-09-29">
+                <b class="news__day">29</b> сент
+              </time>
+              <p class="news__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+            </a>
           </li>
           <li class="news__item">
-            <time class="news__date" datetime="2024-09-19">
-              <b class="news__day">19</b> сент
-            </time>
-            <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2024-09-19">
+                <b class="news__day">19</b> сент
+              </time>
+              <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
+            </a>
           </li>
           <li class="news__item">
-            <time class="news__date" datetime="2024-09-9">
-              <b class="news__day">9</b> сент
-            </time>
-            <p class="news__text">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2024-09-9">
+                <b class="news__day">9</b> сент
+              </time>
+              <p class="news__text">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
+            </a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="reviews">
-      <div class="center-wrap slider">
+      <div class="reviews__wrap slider">
         <h2 class="reviews__title">Отзывы о нас</h2>
-        <a class="reviews__write button" href="#">Оставить свой</a>
-        <blockquote class="reviews__list slider__list">
-          <div class="reviews__item slider__item">
+        <a class="reviews__write button" href="form.html">Оставить свой</a>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
             <img class="reviews__author-photo" src="" alt="Тревис Баркер в татуировках и с лысой головой стоит на улице.">
             <cite class="reviews__author-name">Тревис Баркер</cite>
             <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-          </div>
-          <div class="reviews__item">
+          </blockquote>
+          <blockquote class="reviews__item">
             <img class="reviews__author-photo" src="" alt="Тревис Баркер в татуировках и с лысой головой стоит на улице.">
             <cite class="reviews__author-name">Тревис Баркер</cite>
             <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-          </div>
-          <div class="reviews__item">
+          </blockquote>
+          <blockquote class="reviews__item">
             <img class="reviews__author-photo" src="" alt="Тревис Баркер в татуировках и с лысой головой стоит на улице.">
             <cite class="reviews__author-name">Тревис Баркер</cite>
             <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-          </div>
-        </blockquote>
+          </blockquote>
 
-        <p class="slider__toggles">
+          <button class="reviews-prev">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="reviews-next">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </div>
+
+        <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
-
-        <button class="reviews-prev">
-          <span class="visually-hidden">Предыдущий отзыв</span>
-        </button>
-        <button class="reviews-next">
-          <span class="visually-hidden">Следующий отзыв</span>
-        </button>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="center-wrap">
+    <div class="page-footer__wrap">
       <div class="page-footer__contacts contacts">
         <b class="contacts__title">Барбершоп Бородинский</b>
-        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
-        <a class="contacts__phone" href="tel:+78125556666">
-          <span class="contacts__phone-text">Тел.:</span> +7 (812) 555-66-66
-        </a>
+        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__phone-text">Тел.:</span> +7 (812) 555-66-66
+          </a>
+      </p>
       </div>
 
       <div class="page-footer__socials socials">
