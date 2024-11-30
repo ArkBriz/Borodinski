@@ -8,18 +8,18 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="#">
-      <img src="" width="" height="" alt="Логотип барбершопа «Бородинского».">
+      <img src="" width="" height="" alt="Логотип Барбершопа «Бородинского».">
     </a>
 
     <nav class="page-nav">
-      <button class="page-header__toggler" type="button">
+      <button class="page-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <div class="center-wrap">
+      <div class="page-nav__wrap">
         <ul class="page-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="#">Главная</a>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Наши работы</a>
@@ -31,7 +31,7 @@
             <a class="site-list__link" href="#">Контакты</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Htmlacademy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
 
@@ -45,15 +45,18 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Сайт Барбершопа «Бородинский»</h1>
+    <h1 class="visually-hidden">Сайт Барбершопа «Бородинского»</h1>
 
     <section class="stats">
-      <div class="center-wrap"></div>
+      <div class="stats__wrap">
+        <h2 class="visually-hidden">Наша статистика в цифрах</h2>
+
         <header class="stats__header">
-          <h2 class="visually-hidden">Наша статистика</h2>
-          <p class="stats__slogan">Стрижка у нас это выгодно!</p>
+          <h3 class="stats__title">Стрижка у нас это выгодно!</h3>
           <p class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-          <p class="stats__legend stats__legend--top">* — приведённые данные ложь</p>
+          <p class="stats__legend stats__legend--top">
+            <small>* — приведённые данные ложь</small>
+          </p>
         </header>
 
         <dl class="stats__list">
@@ -74,12 +77,15 @@
             <dd class="stats__desc">лайков и комплиментов</dd>
           </div>
         </dl>
-        <p class="stats__legend stats__legend--bottom">* — приведённые данные ложь</p>
+        <p class="stats__legend stats__legend--bottom">
+          <small>* — приведённые данные ложь</small>
+        </p>
       </div>
     </section>
 
     <section class="advantages">
-      <div class="center-wrap slider">
+
+      <div class="advantages__wrap slider">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list slider__list">
           <li class="advantages__item advantages__item--fast slider__item">
@@ -95,22 +101,22 @@
             <p class="advantages__desc">Наши мастера — профессионалы своего дела не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
           </li>
         </ul>
-        <div class="advantages__toggles slider__toggles">
+        <p class="advantages__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
-        </div>
+        </p>
       </div>
     </section>
 
     <section class="news">
-      <div class="center-wrap">
+      <div class="news__wrap">
         <h2 class="news__title">Новости и акции</h2>
-
+        <a class="news__button button" href="#">Показать все</a>
         <ul class="news__list">
           <li class="news__item">
             <a class="news__link" href="#">
-              <time class="news__date" datetime="2023-09-29">
+              <time class="news__date" datetime="2024-09-29">
                 <b class="news__day">29</b> сент
               </time>
               <p class="news__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
@@ -118,7 +124,7 @@
           </li>
           <li class="news__item">
             <a class="news__link" href="#">
-              <time class="news__date" datetime="2023-09-19">
+              <time class="news__date" datetime="2024-09-19">
                 <b class="news__day">19</b> сент
               </time>
               <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
@@ -126,53 +132,45 @@
           </li>
           <li class="news__item">
             <a class="news__link" href="#">
-              <time class="news__date" datetime="2023-09-9">
+              <time class="news__date" datetime="2024-09-9">
                 <b class="news__day">9</b> сент
               </time>
               <p class="news__text">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
             </a>
           </li>
         </ul>
-
-        <a class="news_show-all button" href="#">Показать все</a>
       </div>
     </section>
 
     <section class="reviews">
-      <div class="center-wrap slider">
+      <div class="reviews__wrap slider">
         <h2 class="reviews__title">Отзывы о нас</h2>
-        <a class="reviews__write button" href="#">Оставить свой</a>
+        <a class="reviews__write button" href="form.html">Оставить свой</a>
 
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
-            <img class="reviews__author-photo" src="" alt="Тревис Баркер весь в татуировках и с лысей головой стоит на улице.">
-            <div class="reviews__content">
-              <cite class="reviews__author-name">Трэвис Баркер</cite>
-              <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-            </div>
+            <img class="reviews__author-photo" src="" alt="Тревис Баркер в татуировках и с лысой головой стоит на улице.">
+            <cite class="reviews__author-name">Тревис Баркер</cite>
+            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
           </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <img class="reviews__author-photo" src="" alt="Тревис Баркер весь в татуировках и с лысей головой стоит на улице.">
-            <div class="reviews__content">
-              <cite class="reviews__author-name">Трэвис Баркер</cite>
-              <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-            </div>
+          <blockquote class="reviews__item">
+            <img class="reviews__author-photo" src="" alt="Тревис Баркер в татуировках и с лысой головой стоит на улице.">
+            <cite class="reviews__author-name">Тревис Баркер</cite>
+            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
           </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <img class="reviews__author-photo" src="" alt="Тревис Баркер весь в татуировках и с лысей головой стоит на улице.">
-            <div class="reviews__content">
-              <cite class="reviews__author-name"Трэвис Баркер</cite>
-              <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-            </div>
+          <blockquote class="reviews__item">
+            <img class="reviews__author-photo" src="" alt="Тревис Баркер в татуировках и с лысой головой стоит на улице.">
+            <cite class="reviews__author-name">Тревис Баркер</cite>
+            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
           </blockquote>
-        </div>
 
-        <button class="reviews__prev button">
+          <button class="reviews-prev">
             <span class="visually-hidden">Предыдущий отзыв</span>
-        </button>
-        <button class="reviews__next button">
-          <span class="visually-hidden">Следующий отзыв</span>
-        </button>
+          </button>
+          <button class="reviews-next">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
+        </div>
 
         <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">1</button>
@@ -184,21 +182,21 @@
   </main>
 
   <footer class="page-footer">
-    <div class="center-wrap">
+    <div class="page-footer__wrap">
       <div class="page-footer__contacts contacts">
         <b class="contacts__title">Барбершоп Бородинский</b>
-        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-          <a class="contacts__phone button" href="tel:+78125556666">
-            <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__phone-text">Тел.:</span> +7 (812) 555-66-66
           </a>
         </p>
       </div>
 
       <div class="page-footer__socials socials">
-        <b class="socials__title">Давайте дружить!</b>
-        <ul class="page-footer__list social__list">
+        <p class="socials__title">Давайте дружить!</p>
+        <ul class="socials__list">
           <li class="socials__item">
-            <a class="socials__link social__link--vk" href="#">
+            <a class="socials__link socials__link--vk " href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
@@ -216,7 +214,7 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__title">Разработано:</b>
+        <p class="copyright__title">Разработано:</p>
         <a class="copyright__link button" href="#">HTML Academy</a>
       </div>
     </div>
